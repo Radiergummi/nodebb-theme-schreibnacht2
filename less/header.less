@@ -1,0 +1,132 @@
+.header {
+	.forum-title {
+		margin: 0px;
+		font-family: "Courier New", @font-family-monospace, monospace;
+	}
+	
+	.pagination-block {
+		color: #fff;
+	}
+
+
+	#notif-list {
+		overflow-x: hidden;
+		overflow-y: auto;
+		max-height: 250px;
+		padding: 0;
+
+		li {
+			font-size: 12px;
+			width: 300px;
+			text-align: left;
+			margin: 0 0 5px 0;
+			list-style-type: none;
+			padding: 0.5em;
+			clear: both;
+
+			img {
+				max-width: 32px;
+				max-height: 32px;
+				float: left;
+			}
+
+			a {
+				color: @text-color;
+				white-space: normal;
+				overflow: hidden;
+				margin: 0;
+				// padding: 3px 5px 3px 20px;
+				text-overflow: ellipsis;
+
+				.text {
+					margin-left: 40px;
+					margin-right: 50px;
+					display: block;
+					min-height: 32px;
+				}
+			}
+
+			&.unread {
+				.bg-variant(@state-warning-bg);
+
+				.mark-read:after {
+					content: "\f111";
+				}
+
+				.mark-read:hover:after {
+					content: "\f10c";
+				}
+			}
+
+			.mark-read {
+				color: @text-muted;
+
+				&:after {
+					font-family: "FontAwesome";
+					content: "\f10c";
+					padding: 4px 1rem;
+					position: relative;
+					top: 1px;
+				}
+
+				&:hover {
+					color: @gray-dark;
+					.pointer;
+
+					&:after {
+						content: "\f111";
+					}
+				}
+			}
+		}
+	}
+
+	.notif-dropdown-link {
+		// margin-top: 1em;
+		border-top: 1px solid rgba(163, 163, 163, 0.5);
+
+		a {
+			display: block;
+			text-align: center;
+			padding: 0.5em 0;
+			font-weight: 600;
+		}
+	}
+
+	#chat-list {
+		#notif-list;
+
+		li {
+			.pointer;
+			width: 200px;
+
+			a {
+				white-space: nowrap;
+				line-height: 30px;
+
+				img {
+					width: 32px;
+					margin-right: 1em;
+				}
+			}
+
+			&.no_active a {
+				text-align: center;
+				white-space: normal;
+			}
+		}
+	}
+
+	.container {
+		@media (min-width: 768px) {
+			width: 100%;
+		}
+	}
+}
+
+
+.navbar-inverse {
+  background-color: #25425B;
+  border-color: rgba(0,0,0,.1);
+  box-shadow: 0 1px 5px rgba(0,0,0,.4);
+}

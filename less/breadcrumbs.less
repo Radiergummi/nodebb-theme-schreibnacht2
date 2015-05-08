@@ -1,0 +1,24 @@
+.breadcrumb {
+  padding: @breadcrumb-padding-vertical + 2px @breadcrumb-padding-horizontal @breadcrumb-padding-vertical @breadcrumb-padding-horizontal;
+  margin-bottom: @line-height-computed;
+  list-style: none;
+  background-color: @breadcrumb-bg;
+  border-radius: @border-radius-base;
+  line-height: 1;
+
+  > li {
+    display: inline-block;
+    
+    + li::before {
+	  	display: none;
+	  }
+
+		> i {
+			color: @breadcrumb-active-color;
+		}
+  }
+
+  > .active {
+    color: @breadcrumb-active-color;
+  }
+}

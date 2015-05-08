@@ -1,0 +1,57 @@
+{
+  "name": "nodebb-theme-lavender",
+  "version": "1.0.40",
+  "description": "Lavender Theme for NodeBB",
+  "main": "theme.less",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/psychobunny/nodebb-theme-lavender"
+  },
+  "keywords": [
+    "nodebb",
+    "lavender",
+    "theme",
+    "themes"
+  ],
+  "author": {
+    "name": "psychobunny",
+    "email": "psycho.bunny@hotmail.com"
+  },
+  "license": "BSD-2-Clause",
+  "bugs": {
+    "url": "https://github.com/psychobunny/nodebb-theme-lavender/issues"
+  },
+  "peerDependencies": {
+    "nodebb-theme-vanilla": "^1.0.0"
+  },
+  "homepage": "https://github.com/psychobunny/nodebb-theme-lavender",
+  "_id": "nodebb-theme-lavender@1.0.40",
+  "dist": {
+    "shasum": "ede0c66f602f7cca7d1d85876d4ade284a1a82ed",
+    "tarball": "http://registry.npmjs.org/nodebb-theme-lavender/-/nodebb-theme-lavender-1.0.40.tgz"
+  },
+  "_from": "nodebb-theme-lavender@>=1.0.28 <2.0.0",
+  "_npmVersion": "1.4.3",
+  "_npmUser": {
+    "name": "psychobunny",
+    "email": "psycho.bunny@hotmail.com"
+  },
+  "maintainers": [
+    {
+      "name": "psychobunny",
+      "email": "psycho.bunny@hotmail.com"
+    },
+    {
+      "name": "julianlam",
+      "email": "julian@designcreateplay.com"
+    },
+    {
+      "name": "baris",
+      "email": "barisusakli@gmail.com"
+    }
+  ],
+  "directories": {},
+  "_shasum": "ede0c66f602f7cca7d1d85876d4ade284a1a82ed",
+  "_resolved": "https://registry.npmjs.org/nodebb-theme-lavender/-/nodebb-theme-lavender-1.0.40.tgz",
+  "readme": "ERROR: No README data found!"
+}

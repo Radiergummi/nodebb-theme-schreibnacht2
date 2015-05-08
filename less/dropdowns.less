@@ -1,0 +1,35 @@
+.dropdown.open,
+.btn-group.open { 
+  &::before,
+  &::after {
+		content: '';
+		position: absolute;
+		display: block;
+		right: calc(~"50% - 10px");
+		width: 0;
+		height: 0;
+		border-style: solid;
+		border-width: 0 10px 10px 10px;
+		z-index: 1001;
+	}
+
+  &::before {
+		bottom: -4px;
+		border-color: transparent transparent rgba(0,0,0,.2) transparent;
+	}
+
+	&::after {
+		bottom: -5px;
+		border-color: transparent transparent #fff transparent;
+  }
+}
+
+.dropdown-menu {
+	margin: 4px 0 0;
+}
+
+.navbar-nav>li>.dropdown-menu {
+  margin-top: 4px;
+  border-top-right-radius: 4px;
+  border-top-left-radius: 4px;
+}
